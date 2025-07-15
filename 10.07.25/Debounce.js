@@ -17,7 +17,15 @@ function searchQuery(value) {
 
 const debounceSearch = debounce(searchQuery, 2000); // 2 sec delay
 
-document.getElementById("searchbox").addEventListener('input', (e) => {
-    debounceSearch(e.target.value);
-});
+// document.getElementById("searchbox").addEventListener('input', (e) => {
+//     debounceSearch(e.target.value);
+// });
+const num1 = [10,5,34,3]
+const max = num1.reduce((acc, curr)=>{
+    return curr > acc ? curr : acc;
+
+})
+console.log("max",max);
+
+
 
